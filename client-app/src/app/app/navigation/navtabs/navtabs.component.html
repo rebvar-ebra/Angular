@@ -1,0 +1,20 @@
+<div class="navtabs-container" fxLayout="row" fxLayoutAlign="center center">
+    <nav mat-tab-nav-bar   >
+       
+        <a mat-tab-link [routerLink]="['/']" 
+        routerLinkActive #home="routerLinkActive" >Home</a>
+
+        <a mat-tab-link [routerLink]="['/accomodation']" 
+        routerLinkActive #accomodaton="routerLinkActive" >Accomodation</a>
+
+        <a mat-tab-link [routerLink]="['/food-beverage']" 
+        routerLinkActive #foodbeverage="routerLinkActive" >Food-beverage</a>
+
+        <a mat-tab-link [routerLink]="['/lifestyle']" 
+        routerLinkActive #lifestyle="routerLinkActive" >LifeStyle</a>
+        
+        
+        <a mat-tab-link [routerLink]="['/offer']" 
+        routerLinkActive #offer="routerLinkActive" >Offers</a>
+    </nav>
+</div>

@@ -1,0 +1,52 @@
+.home-s p{
+    text-align: center;
+    line-height: normal;
+}
+.rooms-h-display{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: warp;
+    margin: 15px;
+
+}
+.rooms-h-display .mat-card{
+    position: relative;
+    text-align: center;
+}
+.rooms-h{
+    background:url(/assets/images/back.jpg) center center no-repeat;
+    background-size: cover;
+}
+.beach-h{
+    background:url(/assets/images/beach2.jpg) center center no-repeat;
+    background-size: cover;
+}
+mat-card{
+    height: 400px;
+}
+.rooms-h-display mat-card-header h2{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 43px;
+}
+.rooms-h-display mat-card-header{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    text-align: center;
+    height: 55px;
+    background: rgba(255,248,255,0.6);
+}
+.rooms-h-display mat-card-action{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.rooms-h-display button{
+    min-width: 141px;
+    min-height: 40px;
+}
