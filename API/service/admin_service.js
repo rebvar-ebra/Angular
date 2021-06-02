@@ -4,8 +4,8 @@ const _ = require('lodash');
 const RoomSchema = require('../models/room');
 const HotelSchema = require('../models/hotel');
 
-const Room = mongoose.model('Room', RoomSchema);
-const Hotel = mongoose.model('Hotel', HotelSchema);
+const Room = RoomSchema;
+const Hotel = HotelSchema;
 
 createNewRoom = (req, res) => new Promise((resolve, reject) => {
     try {

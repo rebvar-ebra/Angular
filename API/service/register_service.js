@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcrypt');
 const UserSchema = require('../models/user');
 
-const User = mongoose.model('User', UserSchema);
+const User = UserSchema;
 
 
 const registerStepOne = (req, res) =>  new Promise ((resolve,reject)=> {

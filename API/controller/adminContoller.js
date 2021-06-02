@@ -1,5 +1,5 @@
 const express = require('express');
-const fs = require('file-system');
+const fs = require('fs-extra');
 const path = require('path');
 const router = express.Router();
 const mongoose = require('mongoose');
@@ -9,8 +9,8 @@ const HotelSchema = require('../models/hotel');
 
 const adminService = require('../service/admin_service');
 
-const Room = mongoose.model('Room', RoomSchema);
-const Hotel = mongoose.model('Hotel', HotelSchema)
+const Room = RoomSchema;
+const Hotel = HotelSchema;
 
 const ERROR_CODE = 400;
 const handleFailureResponse = (res, err) => res.status(ERROR_CODE).send(err);

@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const passport = require('passport');
 const { ensureAuthenticated} = require('../config/auth');
 const CartSchema = require('../models/cart_model');
-const Cart = mongoose.model('Cart', CartSchema);
+const Cart = CartSchema;
 
 const dashboardService = require('../service/fin_service');
 

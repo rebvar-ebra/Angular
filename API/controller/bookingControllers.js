@@ -5,7 +5,7 @@ const { ensureAuthenticated} = require('../config/auth');
 
 
 const BookSchema = require('../models/order_model');
-const Book = mongoose.model('Book',BookSchema)
+const Book =BookSchema;
 
 
 const BookingService = require('../service/booking_service');

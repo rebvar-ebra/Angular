@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const UserSchema = require('../models/user');
 
 
-const User = mongoose.model('User', UserSchema);
+const User = UserSchema;
 
 
 router.get('/', (req, res) => {

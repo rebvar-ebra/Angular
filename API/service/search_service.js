@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 const RoomSchema = require('../models/room');
 const HotelSchema = require('../models/hotel');
 
-const Room = mongoose.model('Room', RoomSchema);
-const Hotel = mongoose.model('Hotel', HotelSchema);
+const Room = RoomSchema;
+const Hotel = HotelSchema;
 
 
 const fetchHotel = (req,res) => new Promise((resolve, reject) => {

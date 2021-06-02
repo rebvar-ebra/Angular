@@ -5,8 +5,8 @@ const RoomSchema = require('../models/room');
 const HotelSchema = require('../models/hotel');
 const FinalService =require('../service/search_service');
 
-const Room = mongoose.model('Room', RoomSchema);
-const Hotel = mongoose.model('Hotel', HotelSchema);
+const Room = RoomSchema;
+const Hotel = HotelSchema;
 
 const SUCCESS_CODE = 200;
 const ERROR_CODE = 400;

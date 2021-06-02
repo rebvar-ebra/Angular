@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const BookSchema = require('../models/order_model');
 const _ = require('lodash');
-const Book = mongoose.model('Book', BookSchema);
+const Book = BookSchema;
 
 
 const countBook = () => new Promise((resolve, reject) => {

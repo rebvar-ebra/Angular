@@ -2,8 +2,8 @@ const mongoose = require('mongoose');
 const CartSchema = require('../models/cart_model');
 const ItemSchema = require('../models/cart_model_item');
 
-const Cart = mongoose.model('Cart', CartSchema);
-const Item = mongoose.model('Item', ItemSchema);
+const Cart = CartSchema;
+const Item = ItemSchema;
 
 
 
