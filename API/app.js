@@ -48,13 +48,14 @@ const bookController = require('./controller/bookingControllers');
 const usersController = require('./controller/userController');
 const adminController = require('./controller/adminContoller');
 
-app.use('/login', loginController);
-app.use('/register', registerController);
-app.use('/dashboard', dashboardController);
-app.use('/fin', FinController);
-app.use('/booking', bookController);
-app.use('/users', usersController);
-app.use('/admin', adminController);
+app.use('login', loginController);
+app.use('register', registerController);
+app.use('dashboard', dashboardController);
+app.use('fin', FinController);
+app.use('booking', bookController);
+app.use('users', usersController);
+app.use('admin', adminController);
+// app.use('/api', passport.authenticate('jwt', { session: false}));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
